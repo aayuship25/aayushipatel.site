@@ -1,376 +1,436 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aayushi Patel | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+<!doctype html>
+<html lang="en"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260910-01-41a442a","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/c21197326e9a1154.telemetry_sdk.js" integrity="sha512-Aqwl+NmLtKBcMQM4HY+W9lmBHa+zP5MqSEuYfCjkzt4xeOSv2xNz81cCp7JyXBVrY+zojg5o94FHY/R31v2d3Q=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aayushi Patel — Full Stack Developer and Python Enthusiast.">
+  <title>Aayushi Patel | Full Stack Developer</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;display=swap" rel="stylesheet">
+  <script src="/_sdk/efe904fe8a212716.data_sdk.js" integrity="sha512-oiO0pmn5llS1uDeB2l690YywxqOe/a0U1kzY6RGaLZXtyh9YjTk1CUoK/bJUugc1QbUaJMJ3IE1MtpNY5NBZCw=="></script>
+  <style>
+    :root {
+      --ink: #f8f7ff;
+      --navy: #0a0d1c;
+      --navy-soft: #11152a;
+      --panel: rgba(22, 27, 55, .72);
+      --line: rgba(214, 207, 255, .17);
+      --muted: #b9b8cd;
+      --violet: #9c7cff;
+      --violet-bright: #c4b5fd;
+      --success: #79e2a7;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; width: 100%; background: var(--navy); color: var(--ink); font-family: "DM Sans", sans-serif; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    ::selection { background: var(--violet); color: var(--navy); }
+    :focus-visible { outline: 3px solid #d7ccff; outline-offset: 4px; }
 
-    <!-- ===== NAVBAR ===== -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-logo">AP<span>.</span></div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+    .portfolio-shell {
+      width: 100%;
+      min-height: 100%;
+      background:
+        radial-gradient(circle at 85% 7%, rgba(141, 96, 255, .20), transparent 25rem),
+        radial-gradient(circle at 8% 38%, rgba(55, 108, 255, .12), transparent 28rem),
+        linear-gradient(180deg, #090c1a 0%, #0b0e20 48%, #090b18 100%);
+    }
+    .portfolio-shell::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .32;
+      background-image: linear-gradient(rgba(208, 200, 255, .035) 1px, transparent 1px), linear-gradient(90deg, rgba(208, 200, 255, .035) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .page-layer { position: relative; z-index: 1; width: 100%; }
+    .display { font-family: "Fraunces", serif; }
+    .nav-shell { border-bottom: 1px solid transparent; transition: background .25s ease, border-color .25s ease, box-shadow .25s ease; }
+    .nav-shell.scrolled { background: rgba(10, 13, 28, .84); border-color: var(--line); box-shadow: 0 14px 36px rgba(0, 0, 0, .18); }
+    .nav-link { position: relative; color: #c9c7dc; font-size: .86rem; font-weight: 700; transition: color .2s ease; }
+    .nav-link::after { content: ""; position: absolute; bottom: -8px; left: 0; width: 100%; height: 2px; border-radius: 999px; background: var(--violet); transform: scaleX(0); transition: transform .2s ease; }
+    .nav-link:hover, .nav-link.active { color: #fff; }
+    .nav-link.active::after { transform: scaleX(1); }
+    .glass { background: var(--panel); border: 1px solid var(--line); box-shadow: 0 18px 50px rgba(0, 0, 0, .16); backdrop-filter: blur(14px); }
+    .eyebrow { color: var(--violet-bright); font-size: .73rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .section { scroll-margin-top: 5rem; border-top: 1px solid var(--line); }
+    .section-title { letter-spacing: -.045em; }
+    .status-dot { width: .55rem; height: .55rem; border-radius: 50%; background: var(--success); box-shadow: 0 0 0 4px rgba(121, 226, 167, .12); }
+    .button-primary, .button-secondary {
+      display: inline-flex; align-items: center; justify-content: center; gap: .55rem; min-height: 3rem; padding: .72rem 1.05rem;
+      border-radius: .7rem; font-size: .92rem; font-weight: 700; transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .button-primary { background: var(--violet); color: #100d21; box-shadow: 0 10px 28px rgba(142, 112, 255, .24); }
+    .button-primary:hover { transform: translateY(-3px); background: #b69eff; box-shadow: 0 16px 32px rgba(142, 112, 255, .34); }
+    .button-secondary { border: 1px solid rgba(222, 216, 255, .32); color: var(--ink); background: rgba(255,255,255,.025); }
+    .button-secondary:hover { transform: translateY(-3px); background: rgba(255,255,255,.09); }
+    .social-icon { display: inline-flex; align-items: center; justify-content: center; width: 2.5rem; height: 2.5rem; border: 1px solid var(--line); border-radius: .65rem; color: #d8d5ec; background: rgba(255,255,255,.025); transition: transform .2s ease, border-color .2s ease, color .2s ease; }
+    .social-icon:hover { transform: translateY(-3px); border-color: var(--violet); color: #fff; }
+    .portrait-frame { position: relative; isolation: isolate; }
+    .portrait-frame::after { content: ""; position: absolute; inset: 1.1rem -1rem -1rem 1.1rem; z-index: -1; border-radius: 1.25rem; background: linear-gradient(140deg, #8b6af5, #4338ca); opacity: .75; }
+    .portrait { aspect-ratio: 4/5; width: 100%; object-fit: cover; object-position: center top; border-radius: 1.25rem; border: 1px solid rgba(228,224,255,.35); filter: saturate(.94) contrast(1.04); }
+    .about-portrait { aspect-ratio: 4/5; width: 100%; max-height: 29rem; object-fit: cover; object-position: center top; border-radius: 1rem; }
+    .highlight-card, .skill-card, .project-card, .education-card { border: 1px solid var(--line); border-radius: 1rem; background: rgba(255,255,255,.035); }
+    .highlight-card { padding: 1.2rem; }
+    .skill-card { padding: 1.35rem; transition: transform .2s ease, border-color .2s ease; }
+    .skill-card:hover, .project-card:hover { transform: translateY(-5px); border-color: rgba(177, 152, 255, .55); }
+    .skill-chip, .tech-chip { display: inline-flex; margin: .22rem .2rem .22rem 0; padding: .32rem .58rem; border: 1px solid rgba(190,180,255,.22); border-radius: 999px; background: rgba(160,130,255,.08); color: #ddd7ff; font-size: .77rem; font-weight: 600; }
+    .project-card { overflow: hidden; transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+    .project-card:hover { box-shadow: 0 22px 48px rgba(0,0,0,.22); }
+    .project-image { width: 100%; height: 12.5rem; object-fit: cover; border-bottom: 1px solid var(--line); filter: brightness(.82) saturate(.85); }
+    .feature-list li { display: flex; gap: .45rem; color: #ccc9df; font-size: .88rem; line-height: 1.45; }
+    .feature-list i { color: var(--violet-bright); width: 1rem; flex: 0 0 auto; margin-top: .15rem; }
+    .project-action { display: inline-flex; align-items: center; gap: .4rem; color: var(--violet-bright); font-size: .9rem; font-weight: 700; }
+    .project-action:hover { color: #fff; }
+    .unavailable { display: inline-flex; align-items: center; gap: .4rem; color: #9995ad; font-size: .88rem; font-weight: 600; cursor: not-allowed; }
+    .timeline-line { border-left: 1px solid var(--line); }
+    .timeline-item { position: relative; padding-left: 2rem; }
+    .timeline-item::before { content: ""; position: absolute; top: .35rem; left: -.42rem; width: .78rem; height: .78rem; border-radius: 50%; background: var(--violet); box-shadow: 0 0 0 5px #0c1022; }
+    .field { width: 100%; border: 1px solid rgba(207,201,246,.24); border-radius: .7rem; background: rgba(255,255,255,.045); color: #fff; padding: .8rem .9rem; outline: none; transition: border-color .2s ease, background .2s ease; }
+    .field::placeholder { color: #9995ad; }
+    .field:focus { border-color: var(--violet); background: rgba(255,255,255,.075); }
+    .mobile-menu { display: none; }
+    .mobile-menu.open { display: block; }
+    .reveal { animation: rise .7s both; }
+    .delay-1 { animation-delay: .1s; } .delay-2 { animation-delay: .2s; } .delay-3 { animation-delay: .3s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+  <script src="/_sdk/6125e8aa3c264a2d.resizing_sdk.js" type="text/javascript" integrity="sha512-+j9iK2FF/yFSTU389rFqKj3v0s1ELh1r0aj3mqpsVRZujaeWi0WgN7jmTcWLcBq91dz3NCEyXqMtHbwpOxhDYg=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(10, 13, 28);">
+  <div class="portfolio-shell">
+   <div class="page-layer">
+    <header class="nav-shell sticky top-0 z-50">
+     <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Primary navigation"><a href="#home" data-template-id="brand-name" class="canva-link display text-xl font-bold tracking-tight" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 16px;">AP.</a>
+      <div class="hidden items-center gap-6 md:flex"><a href="#about" data-template-id="nav-about" class="canva-link nav-link" style="color: rgb(201, 199, 220); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#skills" data-template-id="nav-skills" class="canva-link nav-link" style="color: rgb(201, 199, 220); font-weight: 700; font-style: normal; font-size: 16px;">Skills</a> <a href="#projects" data-template-id="nav-projects" class="canva-link nav-link" style="color: rgb(201, 199, 220); font-weight: 700; font-style: normal; font-size: 16px;">Projects</a> <a href="#education" data-template-id="nav-education" class="canva-link nav-link" style="color: rgb(201, 199, 220); font-weight: 700; font-style: normal; font-size: 16px;">Education</a> <a href="#contact" data-template-id="nav-contact" class="canva-link nav-link" style="color: rgb(201, 199, 220); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+      </div><button id="menu-toggle" type="button" class="rounded-lg border border-violet-200/25 p-2 text-white md:hidden" aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false"> <i data-lucide="menu" aria-hidden="true" style="width:20px;height:20px"></i> </button>
+     </nav>
+     <div id="mobile-menu" class="mobile-menu border-t border-violet-100/10 bg-[#0b0e20]/95 px-5 pb-5 backdrop-blur md:hidden">
+      <div class="flex flex-col gap-4 pt-5"><a href="#about" data-template-id="mobile-nav-about" class="canva-link font-bold text-violet-100" style="color: rgb(237, 234, 255); font-weight: 700; font-style: normal; font-size: 16px;">About</a> <a href="#skills" data-template-id="mobile-nav-skills" class="canva-link font-bold text-violet-100" style="color: rgb(237, 234, 255); font-weight: 700; font-style: normal; font-size: 16px;">Skills</a> <a href="#projects" data-template-id="mobile-nav-projects" class="canva-link font-bold text-violet-100" style="color: rgb(237, 234, 255); font-weight: 700; font-style: normal; font-size: 16px;">Projects</a> <a href="#education" data-template-id="mobile-nav-education" class="canva-link font-bold text-violet-100" style="color: rgb(237, 234, 255); font-weight: 700; font-style: normal; font-size: 16px;">Education</a> <a href="#contact" data-template-id="mobile-nav-contact" class="canva-link font-bold text-violet-100" style="color: rgb(237, 234, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact</a>
+      </div>
+     </div>
+    </header>
+    <main>
+     <section id="home" class="mx-auto max-w-7xl px-5 py-14 lg:px-8 lg:py-20">
+      <div class="grid items-center gap-14 lg:grid-cols-[1.15fr_.7fr]">
+       <div>
+        <div data-template-id="availability-badge" class="canva-tag mb-6 inline-flex items-center gap-2 rounded-full border px-3 py-2" style="background: rgba(121, 226, 167, 0.08); color: rgb(223, 255, 238);"><span class="status-dot" aria-hidden="true"></span> <span data-template-id="availability-badge-text" class="canva-text" style="color: rgb(223, 255, 238); font-weight: 700; font-style: normal; font-size: 16px;">Open to opportunities</span>
         </div>
-    </nav>
-
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <p class="hero-greeting">👋 Hello, I'm</p>
-            <h1 class="hero-name">Aayushi <span>Patel</span></h1>
-            <h2 class="hero-title">Full Stack Developer &amp; Python Enthusiast</h2>
-            <p class="hero-desc">I build clean, functional web applications that solve real-world problems. Passionate about Python, Django, and creating meaningful digital experiences.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
-            </div>
-            <div class="hero-socials">
-                <a href="https://github.com/aayuship25" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/aayushipatel25" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https:aeshupatel0960@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.instagram.com/aeshu_2511/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/aayushi.patel.856811/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            </div>
+        <p data-template-id="hero-eyebrow" class="canva-text eyebrow reveal" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">Portfolio · Full stack development</p>
+        <h1 data-template-id="hero-name" class="canva-text display section-title mt-4 max-w-3xl text-5xl font-bold leading-[.98] sm:text-6xl lg:text-7xl reveal delay-1" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 32px;">Aayushi Patel</h1>
+        <p data-template-id="hero-role" class="canva-text mt-6 max-w-2xl text-xl font-semibold leading-relaxed text-violet-200 reveal delay-1" style="color: rgb(221, 214, 254); font-weight: 600; font-style: normal; font-size: 20px;">Full Stack Developer &amp; Python Enthusiast</p>
+        <p data-template-id="hero-intro" class="canva-text mt-5 max-w-xl text-base leading-7 text-[#b9b8cd] reveal delay-2" style="color: rgb(185, 184, 205); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.7;">I build clean, functional web applications that turn real-world needs into thoughtful digital experiences — from data models to user-friendly interfaces.</p>
+        <div class="mt-8 flex flex-wrap gap-3 reveal delay-2"><a href="#projects" data-template-id="hero-projects-button" class="canva-button button-primary" style="background: rgb(156, 124, 255); color: rgb(16, 13, 33);"> <span data-template-id="hero-projects-button-label" class="canva-text" style="color: rgb(16, 13, 33); font-weight: 700; font-style: normal; font-size: 16px;">View Projects</span><i data-lucide="arrow-down-right" aria-hidden="true" style="width:18px;height:18px"></i> </a> <a href="#contact" data-template-id="hero-contact-button" class="canva-button button-secondary" style="background: rgba(255, 255, 255, 0.024); color: rgb(248, 247, 255);"> <span data-template-id="hero-contact-button-label" class="canva-text" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 16px;">Contact Me</span><i data-lucide="arrow-up-right" aria-hidden="true" style="width:18px;height:18px"></i> </a>
         </div>
-        <div class="hero-image">
-            <div class="hero-blob">
-                <div class="hero-avatar">
-                    <img src="PROFILE3.jpeg" alt="Aayushi Patel" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
-                </div>
-            </div>
+        <div class="mt-8 flex flex-wrap gap-2 reveal delay-3" aria-label="Social profiles"><a href="https://github.com/aayuship25" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Aayushi Patel on GitHub"><i data-lucide="github" aria-hidden="true" style="width:18px;height:18px"></i></a> <a href="https://www.linkedin.com/in/aayushipatel25" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Aayushi Patel on LinkedIn"><i data-lucide="linkedin" aria-hidden="true" style="width:18px;height:18px"></i></a> <a href="mailto:aeshupatel0960@gmail.com" class="social-icon" aria-label="Email Aayushi Patel"><i data-lucide="mail" aria-hidden="true" style="width:18px;height:18px"></i></a> <a href="https://www.instagram.com/aeshu_2511/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Aayushi Patel on Instagram"><i data-lucide="instagram" aria-hidden="true" style="width:18px;height:18px"></i></a> <a href="https://www.facebook.com/aayushi.patel.856811/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Aayushi Patel on Facebook"><i data-lucide="facebook" aria-hidden="true" style="width:18px;height:18px"></i></a>
         </div>
-        <a href="#about" class="scroll-down" aria-label="Scroll down">
-            <i class="fas fa-chevron-down"></i>
-        </a>
-    </section>
-
-    <!-- ===== ABOUT ===== -->
-    <section class="about section" id="about">
-        <div class="container">
-            <h2 class="section-title">About <span>Me</span></h2>
-            <p class="section-subtitle">Get to know me better</p>
-            <div class="about-grid">
-                <div class="about-image-wrap">
-                    <div class="about-img-placeholder">
-                        <img src="PROFILE3.jpeg" alt="Aayushi Patel" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
-                    </div>
-                    <div class="about-tag tag-1">Python</div>
-                    <div class="about-tag tag-2">Django</div>
-                    <div class="about-tag tag-3">Web Application</div>
-                </div>
-                <div class="about-text">
-                    <h3>Who am I?</h3>
-                    <p>I'm a passionate Computer Science student with a strong foundation in Python and web development. I love turning ideas into real, working products — from designing databases to crafting user-friendly interfaces.</p>
-                    <p>My most notable project is the <strong>Food Wastage Management System (FWMS)</strong> — a Django-based web app that connects food donors with collectors to reduce food waste in local communities.</p>
-                    <div class="about-info">
-                        <div class="info-item">
-                            <span class="info-label"><i class="fas fa-map-marker-alt"></i> Location</span>
-                            <span class="info-value">Ahmedabad, Gujarat</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label"><i class="fas fa-envelope"></i> Email</span>
-                            <span class="info-value">aeshupatel0960@gmail.com</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label"><i class="fas fa-graduation-cap"></i> Degree</span>
-                            <span class="info-value">B.E</span>
-                        </div>
-                        <div class="info-item">
-                            <span class="info-label"><i class="fas fa-briefcase"></i> Status</span>
-                            <span class="info-value">Open to Opportunities</span>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-primary">
-                        <i class="fas fa-download"></i> 
-                    </a>
-                </div>
-            </div>
+       </div>
+       <div class="mx-auto w-full max-w-sm reveal delay-1"><!-- Replace this hero image by dropping a new portrait onto it in Canva. -->
+        <div class="portrait-frame"><img data-template-id="hero-profile-image" loading="lazy" class="canva-image portrait" src="canva://MAHUwlNK0Kk/1" alt="Aayushi Patel standing outdoors in professional attire">
         </div>
-    </section>
-
-    <!-- ===== SKILLS ===== -->
-    <section class="skills section" id="skills">
-        <div class="container">
-            <h2 class="section-title">My <span>Skills</span></h2>
-            <p class="section-subtitle">Technologies I work with</p>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Javascript</span>
-                        <span class="skill-tag">CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQLite</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                    
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Concepts</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">REST API</span>
-                        <span class="skill-tag">MVT Pattern</span>
-                        <span class="skill-tag">CRUD</span>
-                        <span class="skill-tag">ORM</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Teamwork</span>
-                        <span class="skill-tag">Communication</span>
-                    </div>
-                </div>
-            </div>
+       </div>
+      </div>
+     </section>
+     <section id="about" class="section mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <div class="grid gap-10 lg:grid-cols-[.7fr_1.1fr] lg:items-center">
+       <div class="relative mx-auto w-full max-w-sm"><!-- Aayushi can replace this supporting About portrait in Canva. --> <img data-template-id="about-profile-image" loading="lazy" class="canva-image about-portrait glass p-2" src="canva://MAHUwhxwxK0/1" alt="Aayushi Patel in a brown suit outdoors">
+       </div>
+       <div>
+        <p data-template-id="about-eyebrow" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">01 · About</p>
+        <h2 data-template-id="about-heading" class="canva-text display section-title mt-3 text-4xl font-bold sm:text-5xl" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 24px;">Building with purpose and curiosity.</h2>
+        <p data-template-id="about-copy-1" class="canva-text mt-6 max-w-2xl text-lg leading-8 text-[#d1cfdf]" style="color: rgb(209, 207, 223); font-weight: 400; font-style: normal; font-size: 18px; line-height: 1.75;">I’m a Computer Science student with a strong foundation in Python and web development. I enjoy translating ideas into working products, from structuring databases to creating clear, user-focused interfaces.</p>
+        <p data-template-id="about-copy-2" class="canva-text mt-4 max-w-2xl leading-7 text-[#b9b8cd]" style="color: rgb(185, 184, 205); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">My Food Wastage Management System project reflects the kind of practical problem solving I value: connecting food donors with collectors to help reduce local food waste.</p>
+        <div class="mt-7 grid gap-3 sm:grid-cols-2">
+         <div data-template-id="about-location-card" class="canva-card highlight-card" style="background: rgba(255, 255, 255, 0.035);"><i data-lucide="map-pin" aria-hidden="true" class="mb-3 text-violet-300" style="width:20px;height:20px"></i>
+          <p data-template-id="about-location-label" class="canva-text text-sm font-bold text-violet-200" style="color: rgb(221, 214, 254); font-weight: 700; font-style: normal; font-size: 16px;">Based between</p>
+          <p data-template-id="about-location-value" class="canva-text mt-1 text-sm text-[#d8d6e7]" style="color: rgb(216, 214, 231); font-weight: 400; font-style: normal; font-size: 16px;">Ahmedabad, Gujarat · Chicago, Illinois</p>
+         </div>
+         <div data-template-id="about-degree-card" class="canva-card highlight-card" style="background: rgba(255, 255, 255, 0.035);"><i data-lucide="graduation-cap" aria-hidden="true" class="mb-3 text-violet-300" style="width:20px;height:20px"></i>
+          <p data-template-id="about-degree-label" class="canva-text text-sm font-bold text-violet-200" style="color: rgb(221, 214, 254); font-weight: 700; font-style: normal; font-size: 16px;">Education</p>
+          <p data-template-id="about-degree-value" class="canva-text mt-1 text-sm text-[#d8d6e7]" style="color: rgb(216, 214, 231); font-weight: 400; font-style: normal; font-size: 16px;">B.E. · Computer Science &amp; Engineering</p>
+         </div>
         </div>
-    </section>
-
-    <!-- ===== PROJECTS ===== -->
-    <section class="projects section" id="projects">
-        <div class="container">
-            <h2 class="section-title">My <span>Projects</span></h2>
-            <p class="section-subtitle">Things I've built</p>
-            <div class="projects-grid">
-
-                <!-- FWMS - Featured -->
-                <div class="project-card featured">
-                    <div class="project-badge">Featured</div>
-                    <div class="project-icon"><i class="fas fa-leaf"></i></div>
-                    <div class="project-content">
-                        <h3>Food Wastage Management System</h3>
-                        <p>A full-stack web application that connects food donors with area-assigned food collectors to reduce food wastage. Features role-based access for Users, Food Collectors, and Admin.</p>
-                        <div class="project-tech">
-                            <span>Django</span>
-                            <span>Python</span>
-                            <span>SQLite</span>
-                            <span>Bootstrap</span>
-                            <span>Jazzmin</span>
-                        </div>
-                        <ul class="project-features">
-                            <li><i class="fas fa-check"></i> 3-role system (User, Collector, Admin)</li>
-                            <li><i class="fas fa-check"></i> Area-based request routing</li>
-                            <li><i class="fas fa-check"></i> Real-time status tracking</li>
-                            <li><i class="fas fa-check"></i> Image upload for food items</li>
-                            <li><i class="fas fa-check"></i> Feedback system</li>
-                        </ul>
-                        <div class="project-links">
-                            <a href="https://github.com/aayuship25/FWMS" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                            <a href="#" class="project-link live">
-                                <i class="fas fa-external-link-alt"></i> http://127.0.0.1:8000/
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
-                    <div class="project-content">
-                        <h3>SUSTAINBOT- YOUR ECO-FRIENDLY SHOPPING ASSISTANT</h3>
-                        <p>IT IS AN AI- POWERED CHATBOT DESIGNED TO HELP USERS MAKE RESPONSIBLE CONSUMPTION DECISIONS.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>HTML</span>
-                            <span>CSS</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <div class="project-content">
-                        <h3>GROCERY MANAGEMENT SYSTEM</h3>
-                        <p>ONLINE SHOPPING ENHANCE ACCESS TO CARE AND IMPROVE THE EFFICIENCY AND CONTINUITY OF SERVICES.</p>
-                        <div class="project-tech">
-                            <span>JavaScript</span>
-                            <span>CSS</span>
-                            <span>HTML</span>
-                            <span>PYTHON</span>
-                            <span>MYSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+       </div>
+      </div>
+      <div class="mt-16">
+       <p data-template-id="bring-eyebrow" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">What I bring</p>
+       <h3 data-template-id="bring-heading" class="canva-text display mt-3 text-3xl font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">A practical development mindset.</h3>
+       <div class="mt-7 grid gap-4 md:grid-cols-3">
+        <article data-template-id="bring-card-1" class="canva-card highlight-card" style="background: rgba(255, 255, 255, 0.035);"><i data-lucide="code-2" aria-hidden="true" class="text-violet-300" style="width:22px;height:22px"></i>
+         <h4 data-template-id="bring-card-1-title" class="canva-text mt-5 font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 16px;">Python &amp; Django</h4>
+         <p data-template-id="bring-card-1-copy" class="canva-text mt-2 text-sm leading-6 text-[#b9b8cd]" style="color: rgb(185, 184, 205); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">A strong interest in building structured, server-side applications with Python.</p>
+        </article>
+        <article data-template-id="bring-card-2" class="canva-card highlight-card" style="background: rgba(255, 255, 255, 0.035);"><i data-lucide="layers-3" aria-hidden="true" class="text-violet-300" style="width:22px;height:22px"></i>
+         <h4 data-template-id="bring-card-2-title" class="canva-text mt-5 font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 16px;">Full-stack perspective</h4>
+         <p data-template-id="bring-card-2-copy" class="canva-text mt-2 text-sm leading-6 text-[#b9b8cd]" style="color: rgb(185, 184, 205); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">Comfort moving between data, back-end logic, and responsive front-end implementation.</p>
+        </article>
+        <article data-template-id="bring-card-3" class="canva-card highlight-card" style="background: rgba(255, 255, 255, 0.035);"><i data-lucide="lightbulb" aria-hidden="true" class="text-violet-300" style="width:22px;height:22px"></i>
+         <h4 data-template-id="bring-card-3-title" class="canva-text mt-5 font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 16px;">Problem solving</h4>
+         <p data-template-id="bring-card-3-copy" class="canva-text mt-2 text-sm leading-6 text-[#b9b8cd]" style="color: rgb(185, 184, 205); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.5;">A thoughtful approach to turning real requirements into useful, maintainable solutions.</p>
+        </article>
+       </div>
+      </div>
+     </section>
+     <section id="skills" class="section mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <p data-template-id="skills-eyebrow" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">02 · Skills</p>
+      <div class="mt-3 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+       <h2 data-template-id="skills-heading" class="canva-text display section-title text-4xl font-bold sm:text-5xl" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 24px;">Tools, concepts &amp; craft.</h2>
+       <p data-template-id="skills-copy" class="canva-text max-w-md leading-7 text-[#b9b8cd]" style="color: rgb(185, 184, 205); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">A focused toolkit shaped through hands-on projects, learning, and collaborative problem solving.</p>
+      </div>
+      <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+       <article data-template-id="skills-languages-card" class="canva-card skill-card" style="background: rgba(255, 255, 255, 0.035);">
+        <h3 data-template-id="skills-languages-title" class="canva-text font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Languages</h3>
+        <div class="mt-4">
+         <span data-template-id="language-1" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Python</span><span data-template-id="language-2" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">JavaScript</span><span data-template-id="language-3" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">HTML5</span><span data-template-id="language-4" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">CSS</span><span data-template-id="language-5" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">SQL</span>
         </div>
-    </section>
-
-    <!-- ===== EDUCATION ===== -->
-    <section class="education section" id="education">
-        <div class="container">
-            <h2 class="section-title">My <span>Education</span></h2>
-            <p class="section-subtitle">Academic background</p>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2026</span>
-                        <h3>Bachelor of Technology / BE</h3>
-                        <h4>NEW LJ INSTITUTE OF ENGINEERING AND TECHNOLOGY, Ahmedabad</h4>
-                        <p>Computer Science & Engineering</p>
-                        <span class="timeline-tag">Graduatedt</span>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="timeline-date">2022</span>
-                        <h3>Higher Secondary (12th)</h3>
-                        <h4>Nalanda Vidyalay</h4>
-                        <p>Stream: PCM &nbsp;|&nbsp; Percentage: 95%</p>
-                    </div>
-                </div>
-
-            </div>
+       </article>
+       <article data-template-id="skills-development-card" class="canva-card skill-card" style="background: rgba(255, 255, 255, 0.035);">
+        <h3 data-template-id="skills-development-title" class="canva-text font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Development</h3>
+        <div class="mt-4">
+         <span data-template-id="development-1" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Python</span><span data-template-id="development-2" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Django</span><span data-template-id="development-3" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Web applications</span>
         </div>
-    </section>
-
-    <!-- ===== CONTACT ===== -->
-    <section class="contact section" id="contact">
-        <div class="container">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
-            <p class="section-subtitle">Let's work together</p>
-            <div class="contact-grid">
-                <div class="contact-info">2g
-                    <h3>Let's talk!</h3>
-                    <p>Whether it's a project, an opportunity, or just a hello — my inbox is always open.</p>
-                    <div class="contact-items">
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div>
-                                <span>Email</span>
-                                <a href="https://aeshupatel0960@gmail.com">aeshupatel0960@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
-                            <div>
-                                <span>LinkedIn</span>
-                                <a href="https://linkedin.com/in/aayuship25" target="_blank">https://www.linkedin.com/in/aayushipatel25</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fab fa-github"></i></div>
-                            <div>
-                                <span>GitHub</span>
-                                <a href="https://github.com/aayuship25" target="_blank">github.com/aayuship25</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fab fa-instagram"></i></div>
-                            <div>
-                                <span>Instagram</span>
-                                <a href="https://www.instagram.com/aeshu_2511/" target="_blank">instagram.com/aeshu_2511</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fab fa-facebook"></i></div>
-                            <div>
-                                <span>Facebook</span>
-                                <a href="https://www.facebook.com/aayushi.patel.856811/" target="_blank">facebook.com/aayushi.patel</a>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div>
-                                <span>Location</span>
-                                <p>CHICAGO,ILLINOIS,USA</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" id="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
-            </div>
+       </article>
+       <article data-template-id="skills-databases-card" class="canva-card skill-card" style="background: rgba(255, 255, 255, 0.035);">
+        <h3 data-template-id="skills-databases-title" class="canva-text font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Databases</h3>
+        <div class="mt-4">
+         <span data-template-id="database-1" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">SQLite</span><span data-template-id="database-2" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">MySQL</span><span data-template-id="database-3" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">PostgreSQL</span>
         </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">AP<span>.</span></div>
-            <p>Designed &amp; Built by <strong>Aayushi Patel</strong></p>
-            <div class="footer-socials">
-                <a href="https://github.com/aayuship25" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.aeshupatel0960@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.instagram.com/aeshu_2511/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/aayushi.patel.856811/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
-            </div>
-            <p class="footer-copy">&copy; 2026 Aayushi Patel. All rights reserved.</p>
+       </article>
+       <article data-template-id="skills-tools-card" class="canva-card skill-card" style="background: rgba(255, 255, 255, 0.035);">
+        <h3 data-template-id="skills-tools-title" class="canva-text font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Tools</h3>
+        <div class="mt-4">
+         <span data-template-id="tool-1" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Git</span><span data-template-id="tool-2" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">GitHub</span><span data-template-id="tool-3" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">VS Code</span>
         </div>
+       </article>
+       <article data-template-id="skills-concepts-card" class="canva-card skill-card" style="background: rgba(255, 255, 255, 0.035);">
+        <h3 data-template-id="skills-concepts-title" class="canva-text font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Concepts</h3>
+        <div class="mt-4">
+         <span data-template-id="concept-1" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">OOP</span><span data-template-id="concept-2" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">REST API</span><span data-template-id="concept-3" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">MVT</span><span data-template-id="concept-4" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">CRUD</span><span data-template-id="concept-5" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">ORM</span>
+        </div>
+       </article>
+       <article data-template-id="skills-collaboration-card" class="canva-card skill-card" style="background: rgba(255, 255, 255, 0.035);">
+        <h3 data-template-id="skills-collaboration-title" class="canva-text font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Collaboration</h3>
+        <div class="mt-4">
+         <span data-template-id="collaboration-1" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Problem Solving</span><span data-template-id="collaboration-2" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Teamwork</span><span data-template-id="collaboration-3" class="canva-tag skill-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Communication</span>
+        </div>
+       </article>
+      </div>
+     </section>
+     <section id="projects" class="section mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <p data-template-id="projects-eyebrow" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">03 · Featured projects</p>
+      <div class="mt-3 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+       <h2 data-template-id="projects-heading" class="canva-text display section-title text-4xl font-bold sm:text-5xl" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 24px;">Projects with purpose.</h2>
+       <p data-template-id="projects-copy" class="canva-text max-w-md leading-7 text-[#b9b8cd]" style="color: rgb(185, 184, 205); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">A selection of projects exploring practical web development and thoughtful digital experiences.</p>
+      </div>
+      <div class="mt-10 grid gap-5 lg:grid-cols-3">
+       <article data-template-id="project-fwms-card" class="canva-card project-card lg:col-span-2" style="background: rgba(255, 255, 255, 0.035);"><img data-template-id="project-fwms-image" loading="lazy" class="canva-image project-image" src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Volunteers distributing aid at an outdoor donation center">
+        <div class="p-6 sm:p-7">
+         <p data-template-id="project-fwms-label" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">Featured full-stack project</p>
+         <h3 data-template-id="project-fwms-title" class="canva-text display mt-3 text-3xl font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Food Wastage Management System</h3>
+         <p data-template-id="project-fwms-copy" class="canva-text mt-4 max-w-2xl leading-7 text-[#c3c1d1]" style="color: rgb(195, 193, 209); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">A Django-based web application connecting food donors with area-assigned collectors to support food redistribution and reduce waste in local communities.</p>
+         <div class="mt-5">
+          <span data-template-id="fwms-tech-1" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Django</span><span data-template-id="fwms-tech-2" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Python</span><span data-template-id="fwms-tech-3" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">SQLite</span><span data-template-id="fwms-tech-4" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Bootstrap</span>
+         </div>
+         <ul class="feature-list mt-6 grid gap-2 sm:grid-cols-2">
+          <li><i data-lucide="check" aria-hidden="true"></i><span data-template-id="fwms-feature-1" class="canva-text" style="color: rgb(204, 201, 223); font-weight: 400; font-style: normal; font-size: 16px;">Role-based access for users, collectors, and admin</span></li>
+          <li><i data-lucide="check" aria-hidden="true"></i><span data-template-id="fwms-feature-2" class="canva-text" style="color: rgb(204, 201, 223); font-weight: 400; font-style: normal; font-size: 16px;">Area-based request routing</span></li>
+          <li><i data-lucide="check" aria-hidden="true"></i><span data-template-id="fwms-feature-3" class="canva-text" style="color: rgb(204, 201, 223); font-weight: 400; font-style: normal; font-size: 16px;">Food item image uploads and status tracking</span></li>
+          <li><i data-lucide="check" aria-hidden="true"></i><span data-template-id="fwms-feature-4" class="canva-text" style="color: rgb(204, 201, 223); font-weight: 400; font-style: normal; font-size: 16px;">Feedback system for completed requests</span></li>
+         </ul>
+         <div class="mt-7 flex flex-wrap items-center gap-5"><!-- Replace this GitHub URL only when a different repository is available. --> <a href="https://github.com/aayuship25/FWMS" target="_blank" rel="noopener noreferrer" data-template-id="fwms-github-link" class="canva-link project-action" style="color: rgb(221, 214, 254);"><i data-lucide="github" aria-hidden="true" style="width:17px;height:17px"></i><span data-template-id="fwms-github-label" class="canva-text" style="color: rgb(221, 214, 254); font-weight: 700; font-style: normal; font-size: 16px;">View on GitHub</span></a> <span data-template-id="fwms-demo-unavailable" class="canva-text unavailable" style="color: rgb(153, 149, 173); font-weight: 600; font-style: normal; font-size: 16px;">Demo unavailable</span>
+         </div>
+        </div>
+       </article>
+       <article data-template-id="project-sustainbot-card" class="canva-card project-card" style="background: rgba(255, 255, 255, 0.035);"><img data-template-id="project-sustainbot-image" loading="lazy" class="canva-image project-image" src="https://images.pexels.com/photos/20870795/pexels-photo-20870795.jpeg" alt="Hand holding a smartphone displaying an AI chat interface near greenery">
+        <div class="p-6">
+         <p data-template-id="project-sustainbot-label" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">AI concept</p>
+         <h3 data-template-id="project-sustainbot-title" class="canva-text display mt-3 text-2xl font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">SustainBot</h3>
+         <p data-template-id="project-sustainbot-copy" class="canva-text mt-4 leading-7 text-[#c3c1d1]" style="color: rgb(195, 193, 209); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">An AI-powered chatbot concept designed to help users make more responsible consumption decisions while shopping.</p>
+         <div class="mt-5">
+          <span data-template-id="sustainbot-tech-1" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Python</span><span data-template-id="sustainbot-tech-2" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">HTML</span><span data-template-id="sustainbot-tech-3" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">CSS</span>
+         </div><span data-template-id="sustainbot-github-unavailable" class="canva-text unavailable mt-7" style="color: rgb(153, 149, 173); font-weight: 600; font-style: normal; font-size: 16px;">GitHub link unavailable</span>
+        </div>
+       </article>
+       <article data-template-id="project-grocery-card" class="canva-card project-card lg:col-start-2" style="background: rgba(255, 255, 255, 0.035);"><img data-template-id="project-grocery-image" loading="lazy" class="canva-image project-image" src="https://images.pexels.com/photos/8939510/pexels-photo-8939510.jpeg" alt="Person using a smartphone for grocery delivery surrounded by fresh fruits and vegetables">
+        <div class="p-6">
+         <p data-template-id="project-grocery-label" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">Web application</p>
+         <h3 data-template-id="project-grocery-title" class="canva-text display mt-3 text-2xl font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Grocery Management System</h3>
+         <p data-template-id="project-grocery-copy" class="canva-text mt-4 leading-7 text-[#c3c1d1]" style="color: rgb(195, 193, 209); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">An online grocery management project focused on making shopping workflows clearer and more accessible for users.</p>
+         <div class="mt-5">
+          <span data-template-id="grocery-tech-1" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">JavaScript</span><span data-template-id="grocery-tech-2" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">Python</span><span data-template-id="grocery-tech-3" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">HTML</span><span data-template-id="grocery-tech-4" class="canva-tag tech-chip" style="background: rgba(160, 130, 255, 0.08); color: rgb(221, 215, 255); font-weight: 600; font-style: normal; font-size: 16px;">MySQL</span>
+         </div><span data-template-id="grocery-github-unavailable" class="canva-text unavailable mt-7" style="color: rgb(153, 149, 173); font-weight: 600; font-style: normal; font-size: 16px;">GitHub link unavailable</span>
+        </div>
+       </article>
+      </div>
+     </section>
+     <section id="education" class="section mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <p data-template-id="education-eyebrow" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">04 · Education</p>
+      <h2 data-template-id="education-heading" class="canva-text display section-title mt-3 text-4xl font-bold sm:text-5xl" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 24px;">Academic foundation.</h2>
+      <div class="timeline-line mt-10 ml-2 max-w-3xl space-y-10">
+       <article class="timeline-item">
+        <p data-template-id="education-1-date" class="canva-text text-sm font-bold text-violet-200" style="color: rgb(221, 214, 254); font-weight: 700; font-style: normal; font-size: 16px;">2026</p>
+        <div data-template-id="education-1-card" class="canva-card education-card mt-3 p-6" style="background: rgba(255, 255, 255, 0.035);">
+         <h3 data-template-id="education-1-title" class="canva-text display text-2xl font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Bachelor of Technology / B.E.</h3>
+         <p data-template-id="education-1-school" class="canva-text mt-2 font-semibold text-violet-200" style="color: rgb(221, 214, 254); font-weight: 600; font-style: normal; font-size: 16px;">New LJ Institute of Engineering and Technology, Ahmedabad</p>
+         <p data-template-id="education-1-course" class="canva-text mt-2 text-[#c3c1d1]" style="color: rgb(195, 193, 209); font-weight: 400; font-style: normal; font-size: 16px;">Computer Science &amp; Engineering</p><span data-template-id="education-1-status" class="canva-tag mt-4 inline-flex rounded-full border px-3 py-1 text-xs font-bold" style="background: rgba(121, 226, 167, 0.1); color: rgb(186, 244, 210); font-weight: 700; font-style: normal; font-size: 16px;">Graduated</span>
+        </div>
+       </article>
+       <article class="timeline-item">
+        <p data-template-id="education-2-date" class="canva-text text-sm font-bold text-violet-200" style="color: rgb(221, 214, 254); font-weight: 700; font-style: normal; font-size: 16px;">2022</p>
+        <div data-template-id="education-2-card" class="canva-card education-card mt-3 p-6" style="background: rgba(255, 255, 255, 0.035);">
+         <h3 data-template-id="education-2-title" class="canva-text display text-2xl font-bold" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 19px;">Higher Secondary (12th)</h3>
+         <p data-template-id="education-2-school" class="canva-text mt-2 font-semibold text-violet-200" style="color: rgb(221, 214, 254); font-weight: 600; font-style: normal; font-size: 16px;">Nalanda Vidyalay</p>
+         <p data-template-id="education-2-course" class="canva-text mt-2 text-[#c3c1d1]" style="color: rgb(195, 193, 209); font-weight: 400; font-style: normal; font-size: 16px;">Stream: PCM · Percentage: 95%</p>
+        </div>
+       </article>
+      </div>
+     </section>
+     <section id="contact" class="section mx-auto max-w-7xl px-5 py-20 lg:px-8">
+      <div data-template-id="contact-panel" class="canva-panel glass rounded-2xl p-6 sm:p-10 lg:p-12" style="background: rgba(22, 27, 55, 0.72);">
+       <div class="grid gap-12 lg:grid-cols-[.85fr_1.15fr]">
+        <div>
+         <p data-template-id="contact-eyebrow" class="canva-text eyebrow" style="color: rgb(196, 181, 253); font-weight: 700; font-style: normal; font-size: 16px; letter-spacing: 0.16rem;">05 · Contact</p>
+         <h2 data-template-id="contact-heading" class="canva-text display section-title mt-3 text-4xl font-bold sm:text-5xl" style="color: rgb(248, 247, 255); font-weight: 700; font-style: normal; font-size: 24px;">Let’s build something useful.</h2>
+         <p data-template-id="contact-copy" class="canva-text mt-5 max-w-md leading-7 text-[#c3c1d1]" style="color: rgb(195, 193, 209); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.7;">Whether you have a project, an opportunity, or simply want to connect, I’d be glad to hear from you.</p>
+         <div class="mt-8 space-y-4"><a href="mailto:aeshupatel0960@gmail.com" data-template-id="contact-email" class="canva-link flex items-center gap-3 text-violet-100" style="color: rgb(237, 234, 255);"><i data-lucide="mail" aria-hidden="true" style="width:18px;height:18px"></i><span data-template-id="contact-email-text" class="canva-text" style="color: rgb(237, 234, 255); font-weight: 600; font-style: normal; font-size: 16px;">aeshupatel0960@gmail.com</span></a> <a href="https://www.linkedin.com/in/aayushipatel25" target="_blank" rel="noopener noreferrer" data-template-id="contact-linkedin" class="canva-link flex items-center gap-3 text-violet-100" style="color: rgb(237, 234, 255);"><i data-lucide="linkedin" aria-hidden="true" style="width:18px;height:18px"></i><span data-template-id="contact-linkedin-text" class="canva-text" style="color: rgb(237, 234, 255); font-weight: 600; font-style: normal; font-size: 16px;">linkedin.com/in/aayushipatel25</span></a>
+          <div data-template-id="contact-location" class="canva-panel flex items-center gap-3 text-[#d8d6e7]" style="color: rgb(216, 214, 231);">
+           <i data-lucide="map-pin" aria-hidden="true" class="text-violet-300" style="width:18px;height:18px"></i><span data-template-id="contact-location-text" class="canva-text" style="color: rgb(216, 214, 231); font-weight: 400; font-style: normal; font-size: 16px;">Chicago, Illinois, USA</span>
+          </div>
+         </div>
+        </div>
+        <form id="contact-form" novalidate="">
+         <div class="grid gap-5 sm:grid-cols-2">
+          <div>
+           <label data-template-id="form-name-label" class="canva-text mb-2 block text-sm font-semibold" for="contact-name" style="color: rgb(248, 247, 255); font-weight: 600; font-style: normal; font-size: 16px;">Your name</label><input id="contact-name" name="name" class="field" type="text" required="" autocomplete="name">
+          </div>
+          <div>
+           <label data-template-id="form-email-label" class="canva-text mb-2 block text-sm font-semibold" for="contact-email-input" style="color: rgb(248, 247, 255); font-weight: 600; font-style: normal; font-size: 16px;">Your email</label><input id="contact-email-input" name="email" class="field" type="email" required="" autocomplete="email">
+          </div>
+         </div>
+         <div class="mt-5">
+          <label data-template-id="form-subject-label" class="canva-text mb-2 block text-sm font-semibold" for="contact-subject" style="color: rgb(248, 247, 255); font-weight: 600; font-style: normal; font-size: 16px;">Subject</label><input id="contact-subject" name="subject" class="field" type="text">
+         </div>
+         <div class="mt-5">
+          <label data-template-id="form-message-label" class="canva-text mb-2 block text-sm font-semibold" for="contact-message" style="color: rgb(248, 247, 255); font-weight: 600; font-style: normal; font-size: 16px;">Message</label><textarea id="contact-message" name="message" class="field min-h-32 resize-y" required=""></textarea>
+         </div><button id="send-message-button" data-template-id="send-message-button" class="canva-button button-primary mt-6 w-full" type="submit" style="background: rgb(156, 124, 255); color: rgb(16, 13, 33);"><span data-template-id="send-message-label" class="canva-text" style="color: rgb(16, 13, 33); font-weight: 700; font-style: normal; font-size: 16px;">Send Message</span><i data-lucide="send" aria-hidden="true" style="width:17px;height:17px"></i></button>
+         <p id="form-success" data-template-id="form-success-message" class="canva-text mt-4 hidden rounded-lg border px-4 py-3 text-sm" role="status" style="background: rgba(121, 226, 167, 0.1); color: rgb(186, 244, 210); font-weight: 400; font-style: normal; font-size: 16px;">Thank you — your message has been sent successfully.</p>
+         <p id="form-error" data-template-id="form-error-message" class="canva-text mt-4 hidden rounded-lg border px-4 py-3 text-sm" role="alert" style="background: rgba(255, 134, 134, 0.1); color: rgb(255, 180, 180); font-weight: 400; font-style: normal; font-size: 16px;">Your message could not be sent right now. Please try again or email Aayushi directly.</p>
+        </form>
+       </div>
+      </div>
+     </section>
+    </main>
+    <footer class="border-t border-violet-100/10">
+     <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-[#b9b8cd] sm:flex-row sm:items-center sm:justify-between lg:px-8">
+      <p data-template-id="footer-copy" class="canva-text" style="color: rgb(185, 184, 205); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 Aayushi Patel. Designed and built with care.</p><a href="#home" data-template-id="back-to-top" class="canva-link font-bold text-violet-200" style="color: rgb(221, 214, 254); font-weight: 700; font-style: normal; font-size: 16px;">Back to top ↑</a>
+     </div>
     </footer>
+   </div>
+  </div>
+  <script src="/_sdk/274fd4fd45a118b9.editing_sdk.js" integrity="sha512-Msn1UaaFDR3Yt1OVL96AgNy0kzYVTLWkVJwUwLRJ3gbq2DQnMuYov/plm47uJdHn55RV6P7ZhZXYeKThvykMhA=="></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lucide.createIcons();
 
-    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
+      const menuButton = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+      const navShell = document.querySelector(".nav-shell");
+      const navLinks = Array.from(document.querySelectorAll(".nav-link"));
+      const sections = Array.from(document.querySelectorAll("main section[id]"));
 
-    <script src="script.js"></script>
-</body>
-</html>
+      menuButton.addEventListener("click", function () {
+        const open = mobileMenu.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(open));
+        menuButton.setAttribute("aria-label", open ? "Close navigation menu" : "Open navigation menu");
+      });
+
+      mobileMenu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+          mobileMenu.classList.remove("open");
+          menuButton.setAttribute("aria-expanded", "false");
+          menuButton.setAttribute("aria-label", "Open navigation menu");
+        });
+      });
+
+      function updateNavigation() {
+        navShell.classList.toggle("scrolled", window.scrollY > 10);
+        let current = "home";
+        sections.forEach(function (section) {
+          if (window.scrollY >= section.offsetTop - 160) current = section.id;
+        });
+        navLinks.forEach(function (link) {
+          link.classList.toggle("active", link.getAttribute("href") === "#" + current);
+        });
+      }
+      window.addEventListener("scroll", updateNavigation, { passive: true });
+      updateNavigation();
+
+      const form = document.getElementById("contact-form");
+      const submitButton = document.getElementById("send-message-button");
+      const successMessage = document.getElementById("form-success");
+      const errorMessage = document.getElementById("form-error");
+      let currentRecords = [];
+
+      const dataHandler = {
+        onDataChanged(data) {
+          currentRecords = data;
+        }
+      };
+
+      async function initializeData() {
+        const result = await window.dataSdk.init(dataHandler);
+        if (!result.isOk) {
+          errorMessage.classList.remove("hidden");
+          successMessage.classList.add("hidden");
+        }
+      }
+      initializeData();
+
+      form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+        successMessage.classList.add("hidden");
+        errorMessage.classList.add("hidden");
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        if (currentRecords.length >= 999) {
+          errorMessage.classList.remove("hidden");
+          return;
+        }
+
+        submitButton.disabled = true;
+        submitButton.classList.add("opacity-60", "cursor-wait");
+
+        const values = new FormData(form);
+        const result = await window.dataSdk.create({
+          name: String(values.get("name")).trim(),
+          email: String(values.get("email")).trim(),
+          subject: String(values.get("subject")).trim(),
+          message: String(values.get("message")).trim(),
+          submitted_at: new Date().toISOString()
+        });
+
+        submitButton.disabled = false;
+        submitButton.classList.remove("opacity-60", "cursor-wait");
+
+        if (result.isOk) {
+          form.reset();
+          successMessage.classList.remove("hidden");
+        } else {
+          errorMessage.classList.remove("hidden");
+        }
+      });
+    });
+  </script>
+ 
+</body></html>
+                       
